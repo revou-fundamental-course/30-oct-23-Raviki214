@@ -27,10 +27,10 @@ const tinggiBadan = document.getElementById("tb")
 const buttonHitung = document.getElementById("hitung")
 
 beratBadan.addEventListener('input',function() {
-    const inputBb = beratBadan.ariaValueMax.trim()
+    const inputBb = beratBadan.value.trim()
     if (validationBb(inputBb)){
         console.log("FALSE")
-        buttonHitung.ariaDisabled = false;
+        buttonHitung.diisabled = false;
     }else{
         console.log("TRUE")
         buttonHitung.disabled = true;
